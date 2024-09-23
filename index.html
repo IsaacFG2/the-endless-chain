@@ -3,7 +3,6 @@
 <head>
 <meta name="google-site-verification" content="E9-XUgWeHH_FS4hVM138fqc5TLWzC8ijWVwGOLsIP8o" />
 <script src="jquery.min.js"></script>
-<script src="jquery.jscroll.js"></script>
 </head>
 <div class="main">
 <div class="chain">
@@ -17,10 +16,7 @@
 </div>
 </div>
 <script>
-$(function() {
-$(".main").jscroll({
-padding: 2500,
-loadingHtml: ""
-});
-});
+function scroll() {
+$(".chain").clone().appendTo(".main");
+};
 </script>
