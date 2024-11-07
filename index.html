@@ -17,9 +17,8 @@
 </div>
 </div>
 <script>
-      $('.chain').jscroll({
-          padding: 2500,
-          loadingHtml: '',
-          nextSelector: '.chain'
-      });
+function scroll() {
+$(".chain").clone().appendTo(".main");
+};
+document.addEventListener("scroll", scroll);
 </script>
