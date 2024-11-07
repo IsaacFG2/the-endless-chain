@@ -17,9 +17,7 @@
 </div>
 <script>
 function scroll() {
-  if ($(document.documentElement).scrollTop() <= $(document).height() + $(window).height()) {
-    $(".chain").clone().appendTo(".main");
-  }
+$(".chain").clone().appendTo(".main");
 };
 document.addEventListener("scroll", scroll);
 </script>
