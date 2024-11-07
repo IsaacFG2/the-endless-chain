@@ -17,8 +17,11 @@
 </div>
 </div>
 <script>
-function scroll() {
-$(".chain").clone().appendTo(".main");
-};
-document.addEventListener("scroll", scroll);
+      $(function () {
+        $('.chain').jscroll({
+          padding: 2500,
+          loadingHtml: '',
+          nextSelector: '.chain'
+        });
+      });
 </script>
